@@ -15,6 +15,13 @@ ul {
 
 a {
     text-decoration: none;
+    color: #333;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .avatar {
@@ -64,7 +71,7 @@ header {
     padding: 5px 10px;
     line-height: 20px;
     color: #f0fcf6;
-    border: none;
+    border: 1px solid #21262d;
     font-weight: 600;
     transition: 0.3s;
     border-radius: 5px;
@@ -77,6 +84,7 @@ header {
 
 #nav-left input:focus {
     border: 1px solid #388bfd;
+    box-shadow: 0px 0px 5px 1px #388bfd;
     outline: none;
     width: 540px;
     transition: 0.3s;
@@ -95,7 +103,7 @@ header {
     font-size: 13px;
     font-weight: 600;
     line-height: 1.5;
-    letter-spacing: 1.2;
+    letter-spacing: 1px;
 }
 
 #nav-left ul a:hover {
@@ -114,4 +122,166 @@ header {
 #nav-right i:hover {
     font-size: 16px;
     color: #c9d1d9;
+}
+
+/* xxxxxxxx main body xxxxxxxx */
+
+#main-body {
+    background-color: #161b22;
+}
+
+/* xxxxxxxx left side xxxxxxxx */
+
+#left-body {
+    flex: 0.22;
+    height: calc(100vh - 62px);
+    border-right: 1px solid #21262d;
+}
+
+#left-body-content {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#left-body-content #top {
+    width: 100%;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left-body-content #top h3{
+    color: #c9d1d9;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#left-body-content #top button{
+    display: flex;
+    font-weight: 600;
+    background-color: #238636;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #f0f6fc;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #2ea043;
+    transition: 0.2s;
+}
+
+#left-body-content #top button:hover {
+    box-shadow: rgba(46, 160, 67, 0.25) 0px 30px 60px -12px inset, rgba(46, 160, 67, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.2s;
+}
+
+#left-body-content #top button svg{
+    fill: #f0f6fc;
+}
+
+#left-body-content input{
+    background: none;
+    outline: none;
+    width: 270px;
+    padding: 5px 12px;
+    line-height: 20px;
+    color: #c9d1d9;
+    border: 1px solid #21262d;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+#left-body-content input::placeholder {
+    color: #484f58;
+    font-weight: 200;
+}
+
+#left-body-content input:focus {
+    border: 1px solid #388bfd;
+    box-shadow: 0px 0px 3.5px 1px #388bfd;
+    outline: none;
+}
+
+#left-body-content #content {
+    flex-direction: column;
+    gap: 13px;
+    width: 270px;
+    margin: 0 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #30363d;
+}
+
+#left-body-content #content a {
+    display: flex;
+    color: #58a6ff;
+    font-size: 14px;
+    align-self: flex-start;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#left-body-content #content a span:hover {
+    text-decoration: underline;
+}
+
+#left-body-content #content a svg{
+    fill: #8b949e;
+}
+
+#left-body-content #content #show {
+    color: #8b949e;
+    font-size: 12px;
+}
+
+#left-body-content #content #show:hover {
+    color: #58a6ff;
+}
+
+#left-body #parahead {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c9d1d9;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#left-body p {
+    font-size: 14px;
+    color: #8b949e;
+    margin: 0 30px;
+    line-height: 1.5;
+}
+
+#left-body #bottomBtn {
+    color: #58a6ff;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #21262d;
+    margin-left: 30px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#left-body #bottomBtn:hover {
+    background-color: #21262d;
+    border: 1px solid #58a6ff;
+    box-shadow: rgba(22, 55, 99, 0.25) 0px 30px 60px -12px inset, rgba(22, 55, 99, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.2s;
+}
+
+/* xxxxxxxx right side xxxxxxxx */
+
+#right-body {
+    flex: 0.78;
 }
