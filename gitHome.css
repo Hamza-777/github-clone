@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* xxxxxxxx Utilities xxxxxxxx */
@@ -15,13 +18,20 @@ ul {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #8b949e;
 }
 
 button {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
 }
 
 .avatar {
@@ -136,6 +146,7 @@ header {
     flex: 0.22;
     height: calc(100vh - 62px);
     border-right: 1px solid #21262d;
+    align-self: flex-start;
 }
 
 #left-body-content {
@@ -284,4 +295,343 @@ header {
 
 #right-body {
     flex: 0.78;
+    height: auto;
+    align-self: flex-start;
+}
+
+#feed {
+    flex: 0.70;
+    flex-direction: column;
+    padding: 20px 0 20px 30px;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.feed {
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+    color: #c9d1d9;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #21262d;
+}
+
+.feed-head {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.time {
+    margin-left: 3px;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.feed-box {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 780px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px 0;
+    margin-left: 30px;
+}
+
+.follow {
+    width: 100%;
+    align-content: flex-start;
+    justify-content: left;
+    padding: 0 10px;
+}
+
+.follow img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.follow .box-para {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #c9d1d9;
+}
+
+.follow-content {
+    width: 100%;
+}
+
+.repositories-count:hover, 
+.followers-count:hover {
+    color: #58a6ff;
+}
+
+.head-button {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.box-head {
+    font-size: 16px;
+}
+
+.starit {
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    background-color: #21262d;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.starit:hover {
+    border: 1px solid #8b949e;
+    box-shadow: rgba(55, 58, 62, 0.25) 0px 30px 60px -12px inset, rgba(55, 58, 62, 0.3) 0px 18px 36px -18px inset;
+    transition: 0.2s;
+}
+
+.starit i{
+    margin-right: 5px;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+.box-para {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #8b949e;
+}
+
+.feed-box .misc {
+    width: 100%;
+    gap: 15px;
+    padding: 0 15px;
+    justify-content: left;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.css {
+    background-color: #563d7c;
+}
+
+.html {
+    background-color: #e34c26;
+}
+
+.js {
+    background-color: #f1e05a;
+}
+
+.typescript {
+    background-color: #2b7489;
+}
+
+.go {
+    background-color: #00add8;
+}
+
+.python {
+    background-color: #3572a5;
+}
+
+.shell {
+    background-color: #89e051;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.tech-used {
+    gap: 5px;
+}
+
+.stars {
+    color: #8b949e;
+}
+
+.feed-box .stars:hover {
+    color: #58a6ff;
+}
+
+.issues:hover {
+    color: #58a6ff;
+}
+
+.hplink {
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+.hplink:hover {
+    color: #58a6ff;
+}
+
+.hplink-lite {
+    color: #8b949e;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.hplink-lite:hover {
+    color: #58a6ff;
+}
+
+.paras {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.footer-para {
+    color: #8b949e;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+#watch, 
+#follow {
+    color: #58a6ff;
+}
+
+#watch:hover, 
+#follow:hover {
+    text-decoration: underline;
+}
+
+#subscribe:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+#subscribe svg:hover {
+    fill: #58a6ff;
+}
+
+.bulb {
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.mr-1 {
+    fill: #8b949e;
+    margin-right: 3px;
+}
+
+footer {
+    align-self: flex-start;
+}
+
+#git-footer {
+    font-size: 25px;
+    color: #30363d;
+}
+
+#git-footer:hover {
+    color: #8b949e;
+}
+
+footer #git {
+    color: #8b949e;
+    font-size: 12px;
+    gap: 5px;
+    margin-right: 200px;
+    align-self: flex-start;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #58a6ff;
+}
+
+.ul1 {
+    margin-right: 40px;
+}
+
+.ul2 {
+    margin-right: 80px;
+}
+
+#explore {
+    flex: 0.30;
+    align-self: flex-start;
+}
+
+#explore-list {
+    width: 100%;
+    flex-direction: column;
+    margin: 30px 20px 0 20px;
+    gap: 20px;
+}
+
+.explore-head {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c9d1d9;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.repos {
+    width: 100%;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid #21262d;
+    padding-bottom: 10px;
+}
+
+.repo-head {
+    font-size: 12px;
+    align-self: flex-start;
+    color: #c9d1d9;
+}
+
+.repo-head:hover {
+    color: #58a6ff;
+}
+
+.repo-para {
+    font-size: 12px;
+    align-self: flex-start;
+    color: #8b949e;
+}
+
+.repos .misc{
+    font-size: 12px;
+    color: #8b949e;
+    align-self: flex-start;
+    gap: 15px;
+}
+
+#explore-more {
+    align-self: flex-start;
+    font-size: 12px;
+}
+
+#explore-more:hover {
+    color: #58a6ff;
 }
